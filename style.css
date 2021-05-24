@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+
+:root{
+	--bright-orange: hsl(31, 77%, 52%);
+	--dark-cyan: hsl(184, 100%, 22%);
+	--very-dark-cyan: hsl(179, 100%, 13%);
+	--transparent-white: hsla(0, 0%, 100%, 0.75);
+	--very-light-gray: hsl(0, 0%, 95%);
+}
+
+*{
+	box-sizing: border-box;
+	margin:0;
+	padding:0;
+}
+
+.attribution{
+	display:none;
+}
+
+/*mobile*/
+@media (max-width: 993px){
+
+	body{
+		width:375px;
+		font-size: 15px;
+		background: color: var(--very-light-gray);
+		margin: 4em auto;
+		padding: 0 2em;
+	}
+
+
+
+	.sedans, .suvs, .luxury{
+		padding: 3em;
+		width: 100%;
+		height: 400px;
+		color: var(--very-light-gray);
+	}
+
+	.sedans{
+		background-color: var(--bright-orange);
+		border-radius: .5em .5em 0 0;
+	}
+
+	.suvs{
+		background-color: var(--dark-cyan);
+	}
+
+	.luxury{
+		background-color: var(--very-dark-cyan);
+		border-radius: 0 0 .5em .5em;
+	}
+
+
+}
+
+@media (min-width: 994px){
+
+	body{
+		position: relative;
+		display: flex;
+		flex-wrap: wrap;
+		width:100%;
+		font-size: 15px;
+		background: color: var(--very-light-gray);
+		margin: 4em auto;
+		padding: 0 2em;
+	}
+
+	.sedans, .suvs, .luxury{
+		padding: 3em;
+		width: 310px;
+		height: 500px;
+		color: var(--very-light-gray);
+	}
+
+	.sedans{
+		background-color: var(--bright-orange);
+		border-radius: .75em 0 0 .75em;
+	}
+
+	.suvs{
+		background-color: var(--dark-cyan);
+	}
+
+	.luxury{
+		background-color: var(--very-dark-cyan);
+		border-radius: 0 .75em .75em 0;
+	}
+
+	p{
+		padding-bottom: 5em;
+	}
+
+}
+
+	h2{
+		font-family: 'Big Shoulders Display', cursive;
+		text-transform: uppercase;
+		margin: .9em auto;
+		font-size: 2.2rem;
+	}
+
+	p{
+		font-family: 'Lexend Deca', sans-serif;
+		color: var(--transparent-white);
+		margin: 2em auto;
+	}
+
+	.btn{
+		border:0;
+		background: var(--very-light-gray);
+		height: 50px;
+		width: 150px;
+		border-radius:2em;
+		font-family: 'Lexend Deca', sans-serif;
+		font-weight: 400;
+		padding: 0 auto;
+	}
+
+	.sedans .btn{
+		color: var(--bright-orange);
+	}
+
+	.suvs .btn{
+		color: var(--dark-cyan);
+	}
+
+	.luxury .btn{
+		color: var(--very-dark-cyan);
+	}
+
+	.btn:hover{
+		background-color: transparent;
+		border: 2px solid var(--very-light-gray);
+		color: var(--very-light-gray);
+	}
